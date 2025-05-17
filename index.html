@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visit the San Juans</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      color: var(--blue);
+    }
+
+    .logo1 {
+      height: 100px;
+      display: block;
+      margin: 10px auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--blue);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      background-color: var(--white);
+    }
+
+    nav ul li {
+      list-style: none;
+      padding: 20px;
+      font-weight: bold;
+    }
+
+    nav ul li a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    nav ul li:hover {
+      background-color: var(--green);
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .image-link {
+      display: block;
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      text-indent: -9999px;
+      border: 2px solid white;
+      transition: transform 0.3s ease;
+    }
+
+    .image-link:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo1" src="images/SJIVB-1.png" alt="San Juan Logo">
+    <h1>Explore the San Juan Islands</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="orcas.html">Orcas</a></li>
+      <li><a href="sanjuan.html">San Juan</a></li>
+      <li><a href="lopez.html">Lopez</a></li>
+    </ul>
+  </nav>
+
+  <main class="grid-container">
+    <a href="orcas.html" class="image-link" style="background-image: url('images/sj-015.jpg');">Explore Orcas Island</a>
+    <a href="sanjuan.html" class="image-link" style="background-image: url('images/sj-036.jpg');">Explore San Juan Island</a>
+    <a href="lopez.html" class="image-link" style="background-image: url('images/sj-045.jpg');">Explore Lopez Island</a>
+  </main>
+
+  <footer>
+    <p>&copy; Visit the San Juans</p>
+  </footer>
+</body>
+</html>
